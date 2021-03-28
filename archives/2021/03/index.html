@@ -16,7 +16,7 @@
   <meta name="description" content="null">
   <meta name="author" content="Kwords">
   <meta name="keywords" content="undefined">
-  <title>Kwords</title>
+  <title>归档 - Kwords</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 
@@ -42,7 +42,7 @@
 
 
 <body>
-  <header style="height: 100vh;">
+  <header style="height: 60vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -117,17 +117,13 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Talk is cheap，show me the code.">
+            <span class="h2" id="subtitle" title="归档">
               
             </span>
 
             
           </div>
 
-          
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
           
         </div>
       </div>
@@ -138,122 +134,28 @@
     
       <div class="container nopadding-x-md">
         <div class="py-5" id="board"
-          style=margin-top:0>
+          >
           
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
-
-  <div class="row mx-auto index-card">
+<div class="list-group">
+  <p class="h4">共计 3 篇文章</p>
+  <hr>
+  
+  
     
+      
+      <p class="h5">2021</p>
     
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/03/29/ccpc-changchun-F/">2020CCPC长春F-Strange Memory</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/03/29/ccpc-changchun-F/">
-          
-          
-            
-          
-          F. Strange Memory题意：给出一棵树，若树中两点满足其点权异或值为其lca的点权，那么对答案贡献其编号异或值，求贡献总和
-关键词：DSU on Tree
-题解：考虑暴力，答案的贡献可以通过某个节点的子树两两统计后得出，复杂度$O(n^2)$。
-DSU on Tree适合解决子树信息统计类问题，对于每个子树，只需要暴力统计其所有轻儿子的答案，最后统计重儿子并且不删去贡献即可，注意本题的
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-03-29 00:17" pubdate>
-              2021-03-29
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/01/10/jcpc/">2020jscpc部分题解</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/01/10/jcpc/">
-          
-          
-            
-          
-          比赛链接A - Array题意：给出一个序列以及一系列操作与询问，通篇四个大字：数据结构。
-关键词：线段树
-题解：观察到题目给的模数很小，且根据修改操作的性质，对区间修改实际上就是对0~p的数的个数进行修改，因此可以建一棵存放p个节点的线段树，每次修改就是修改每个数出现的次数即可，懒惰标记存放的是每个数对应的映射。难点在于懒惰标记下放时需要对其进行叠加而不是覆盖。复杂度$O(q\times p\t
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-01-10 18:52" pubdate>
-              2021-01-10
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/01/10/icpc_nerc/">2020-2021 ICPC, NERC部分题解</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/01/10/icpc_nerc/">
-          
-          
-            
-          
-          比赛链接A：LaIS题意：给出一个序列，问能否找出一些点，使得相邻两个数的最小值组成的序列非递减。
-关键词：dp、线段树
-题解：首先考虑最长非递减子序列，每个数之间最多能够插入一个比两侧大的数，超过两个就不合法，可以手推或者脑补一下。因此在选择状态转移的时候如果有多个最大值，要选取下标最小的一个，思考一下，如果dp值相同，下标更小的数一定更大，因为后面有更大的数那么可以从这个数进行转移。所以用线段
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-01-10 14:47" pubdate>
-              2021-01-10
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
+    <a href="/2021/03/29/ccpc-changchun-F/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">2020CCPC长春F-Strange Memory</span>
+      <time style="float: right;">03-29</time>
+    </a>
+  
+</div>
 
 
 
